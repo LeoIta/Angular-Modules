@@ -8,7 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AddressComponent } from './order/address/address.component';
 import { SummaryComponent } from './summary/summary.component';
-import { ThanksComponent } from './order/thanks/thanks.component';
+import { ThanksComponent } from './thanks/thanks.component';
 
 const routes: Routes = [
   {
