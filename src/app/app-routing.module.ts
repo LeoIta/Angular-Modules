@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
 import { OrderComponent } from './order/order.component';
-import { AccountComponent } from './account/account.component';
+import { AccountComponent } from './cart/account/account.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AddressComponent } from './order/address/address.component';

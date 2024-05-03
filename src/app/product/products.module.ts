@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [ProductComponent],
   imports: [CommonModule, RouterModule],
-  providers: [],
   exports: [ProductComponent],
 })
 export class ProductsModule {}
