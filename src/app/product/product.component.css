@@ -1,0 +1,24 @@
+li {
+  list-style: none;
+  padding: 0;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.square {
+  border: 1px black solid;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.square p:hover {
+  background-color: whitesmoke;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,16 @@
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+  <h4>Insert your personal data</h4>
+  <div class="field">
+    <label for="name">Name</label><br>
+    <input type="text" id="name" ngModel name="name" minlength="3" required><br>
+  </div>
+  <div class="field">
+    <label for="email">Email</label><br>
+    <input type="email" id="email" ngModel name="email" email required><br>
+  </div>
+  <div class="field">
+    <label for="card">Card number</label><br>
+    <input type="text" id="card" ngModel name="card" minlength="10" maxlength="10" required><br>
+  </div>
+  <button [disabled]="myForm.invalid">Proceed with order</button>
+</form>

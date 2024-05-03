@@ -1,0 +1,24 @@
+<div class="flex">
+  <div class="square">
+    <h3>Selected items</h3>
+    <table>
+      <tr *ngIf="cartList.length!==0">
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+      <tr *ngFor="let product of cartList">
+        <td>{{product.name}}</td>
+        <td>{{product.price}}&euro;</td>
+      </tr>
+      <tr *ngIf="cartList.length===0">
+        <td colspan="2">No products selected</td>
+      </tr>
+      <tr *ngIf="cartList.length!==0">
+        <td>Total</td>
+        <td>{{sum}}&euro;</td>
+      </tr>
+    </table>
+    <button *ngIf="cartList.length!==0" (click)="addData()" [hidden]="withAccount">add basic info</button>
+  </div>
+  <router-outlet></router-outlet>
+</div>

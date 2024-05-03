@@ -1,0 +1,10 @@
+form {
+  border: 1px solid gray;
+  background-color: whitesmoke;
+  padding: 0px 10px 10px 10px;
+  width: fit-content;
+}
+
+.field {
+  margin-bottom: 10px;
+}

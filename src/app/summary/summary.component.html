@@ -1,0 +1,60 @@
+<table *ngIf="products.length!==0">
+  <thead>
+    <tr>
+      <th colspan="3">Products</th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th>Rate</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of products">
+      <td>{{item.name}}</td>
+      <td>{{item.rate}}/10</td>
+      <td class="price">{{item.price}} &euro;</td>
+    </tr>
+    <tr>
+      <th colspan="2">Total to pay</th>
+      <td class="price">{{sum}} &euro;</td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Personal Data</th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Card number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{user?.name}}</td>
+      <td>{{user?.email}}</td>
+      <td>{{user?.cardNumber}}</td>
+    </tr>
+  </tbody>
+  <thead>
+    <tr>
+      <th colspan="3">Shipping address</th>
+    </tr>
+    <tr>
+      <th>City</th>
+      <th>Post Code</th>
+      <th>Street</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{address?.city}}</td>
+      <td>{{address?.postalCode}}</td>
+      <td>{{address?.street}}</td>
+    <tr>
+  </tbody>
+</table>
+<button (click)="confirm()">Confirm payment</button>

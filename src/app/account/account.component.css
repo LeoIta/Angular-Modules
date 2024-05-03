@@ -1,0 +1,9 @@
+form {
+  border: 1px solid gray;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.field {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,16 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <h4>Insert your address</h4>
+  <div class="field">
+    <label for="city">City</label><br>
+    <input type="text" id="city" formControlName="city"><br>
+  </div>
+  <div class="field">
+    <label for="street">Street</label><br>
+    <input type="text" id="street" formControlName="street"><br>
+  </div>
+  <div class="field">
+    <label for="postalCode">Postal Code</label><br>
+    <input type="text" id="postalCode" formControlName="postCode"><br>
+  </div>
+  <button [disabled]="myForm.invalid">Check your order</button>
+</form>

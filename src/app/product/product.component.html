@@ -1,0 +1,17 @@
+<p>Click on the product to add to or remove from the item the shopping cart</p>
+<button (click)="details()">products details</button>
+<div class="flex">
+  <div class="square">
+    <h3>Available</h3>
+    <p (click)="moveToRight(product,i)" *ngFor="let product of products, index as i">{{product.name}}<br>
+      <span *ngIf="showDetails">price: {{product.price}} EUR , rate {{product.rate}}/10</span>
+    </p>
+  </div>
+  <div class="square">
+    <h3>Selected for the shopping cart - {{sum}} &euro;</h3>
+    <p (click)="moveToLeft(product,i)" *ngFor="let product of selectedProducts, index as i">{{product.name}}<br>
+      <span *ngIf="showDetails">price: {{product.price}} EUR , rate {{product.rate}}/10</span>
+    </p>
+  </div>
+</div>
+<button [disabled]="selectedProducts.length===0"><a routerLink="/cart">Go to the shopping cart</a></button>
