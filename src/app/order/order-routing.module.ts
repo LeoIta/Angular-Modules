@@ -5,7 +5,7 @@ import { OrderComponent } from './order.component';
 
 const routes: Routes = [
   {
-    path: 'order',
+    path: '',
     component: OrderComponent,
     children: [
       {
