@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { CartComponent } from './cart.component';
 import { AccountComponent } from './account/account.component';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { CartRoutingModule } from './cart-routing.module';
 
 @NgModule({
   declarations: [CartComponent, AccountComponent],
-  imports: [CommonModule, FormsModule, RouterModule],
-  exports: [CartComponent, AccountComponent],
+  imports: [CommonModule, FormsModule, CartRoutingModule],
+  exports: [CartComponent, AccountComponent, CartRoutingModule],
 })
 export class CartModule {}

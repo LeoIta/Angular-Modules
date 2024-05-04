@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { SummaryComponent } from './summary.component';
-import { RouterModule } from '@angular/router';
+import { SummaryRoutingModule } from './summary-routing.module';
 
 @NgModule({
   declarations: [SummaryComponent],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, SummaryRoutingModule],
   exports: [SummaryComponent],
 })
 export class SummaryModule {}

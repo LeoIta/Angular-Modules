@@ -10,6 +10,7 @@ import { CartModule } from './cart/cart.module';
 import { OrderModule } from './order/order.module';
 import { SummaryModule } from './summary/summary.module';
 import { ThanksModule } from './thanks/thanks.module';
+import { NotFoundModule } from './notFound/notFound.module';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -21,6 +22,7 @@ import { ThanksModule } from './thanks/thanks.module';
     ProductsModule,
     SummaryModule,
     ThanksModule,
+    NotFoundModule,
   ],
   providers: [ProductService],
   bootstrap: [AppComponent],
